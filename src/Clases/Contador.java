@@ -1,4 +1,4 @@
-package Contador;
+package Clases;
 
 public class Contador {
     private int valor;

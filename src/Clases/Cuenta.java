@@ -25,5 +25,4 @@ public class Cuenta {
     public int getId() {
         return id;
     }
-
 }
