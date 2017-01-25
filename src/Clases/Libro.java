@@ -18,19 +18,19 @@ public class Libro {
         this.genero = genero;
     }
     
-    public String prestamo(String nombrePersona){
-        String prestar = "El libro con título "+this.titulo+" ha sido prestado por "+nombrePersona;
+    public String prestamo(Socio socio){
+        String prestar = "El libro con título "+this.titulo+" ha sido prestado a "+socio.getNombreYApellidos();
         return prestar;
     }
     
-    public String devolucion(String nombrePersona){
-        String devolver = "El libro con titulo "+this.titulo+" ha sido devuelto por "+nombrePersona;
+    public String devolucion(Socio socio){
+        String devolver = "El libro con titulo "+this.titulo+" ha sido devuelto por "+socio.getNombreYApellidos();
         return devolver;
     }
 
     @Override
     public String toString() {
-        String cadena="El libro "+titulo+" con ISBN "+ISBN+" es del autor "+autor+" y del género"+genero;
+        String cadena="El libro "+titulo+" con ISBN "+ISBN+" es del autor/a "+autor+" y del género "+genero;
         return cadena;
     }
 
