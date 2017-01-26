@@ -17,6 +17,34 @@ public class ListaNumeros {
             lista.add(r.nextInt((maximo+1)-minimo)+minimo);
         }
     }
+    
+    public int Promedio(){
+        int promedio=0, suma=0;
+        
+        for(int i : lista){
+            suma += i;
+        }
+        promedio = suma/lista.size();
+        
+        return promedio;
+    }
+    
+    public int Maximo(){
+        int max=Integer.MIN_VALUE;
+        
+        for(int i : lista){
+            if(i>max){
+                max=i;
+            }
+        }
+        
+        return max;
+    }
+    
+    public int SegundoMaximo(){
+        int segmax=0;
+        return segmax;
+    }
 
     @Override
     public String toString() {
