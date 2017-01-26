@@ -42,7 +42,14 @@ public class ListaNumeros {
     }
     
     public int SegundoMaximo(){
-        int segmax=0;
+        int segmax=Integer.MIN_VALUE;
+        
+        for(int i : lista){
+            if(i>segmax && i<Maximo()){
+                segmax = i;
+            }
+        }
+        
         return segmax;
     }
 
