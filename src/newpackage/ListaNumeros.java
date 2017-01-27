@@ -52,6 +52,20 @@ public class ListaNumeros {
         
         return segmax;
     }
+    
+    public ArrayList<Integer> Pares(){
+        ArrayList<Integer> pares = new ArrayList<Integer>();
+        
+        for(int i : lista){
+            if(i%2==0){
+                pares.add(i);
+            }
+        }
+        
+        return pares;
+    }
+    
+    
 
     @Override
     public String toString() {

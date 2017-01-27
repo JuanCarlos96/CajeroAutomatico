@@ -10,5 +10,6 @@ public class Main {
         System.out.print("El promedio de los números es: "+arraylist.Promedio()+"\n");
         System.out.print("El máximo de los números es: "+arraylist.Maximo()+"\n");
         System.out.print("El segundo más grande es: "+arraylist.SegundoMaximo()+"\n");
+        System.out.print("Pares del arraylist: "+arraylist.Pares()+"\n");
     }
 }
