@@ -65,7 +65,19 @@ public class ListaNumeros {
         return pares;
     }
     
+    public boolean Existe(int numero){
+        boolean encontrado=false;
+        
+        
+        
+        return encontrado;
+    }
     
+    public int PosicionDe(int numero){
+        int posicion = -1;
+        
+        return posicion;
+    }
 
     @Override
     public String toString() {
