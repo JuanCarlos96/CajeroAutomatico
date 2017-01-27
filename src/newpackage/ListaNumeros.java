@@ -68,7 +68,11 @@ public class ListaNumeros {
     public boolean Existe(int numero){
         boolean encontrado=false;
         
-        
+        for(int i : lista){
+            if(numero==i){
+                
+            }
+        }
         
         return encontrado;
     }
