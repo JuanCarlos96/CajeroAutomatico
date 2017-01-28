@@ -70,7 +70,7 @@ public class ListaNumeros {
         
         for(int i : lista){
             if(numero==i){
-                
+                encontrado=true;
             }
         }
         
@@ -79,6 +79,12 @@ public class ListaNumeros {
     
     public int PosicionDe(int numero){
         int posicion = -1;
+        
+        for(int i : lista){
+            if(numero==i){
+                posicion=lista.indexOf(i);
+            }
+        }
         
         return posicion;
     }
