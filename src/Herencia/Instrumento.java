@@ -10,11 +10,19 @@ public class Instrumento {
         this.nombre = nombre;
     }
     
-    public void tocar(){
-        System.out.println("Tocando instrumento");
+    public void tocar(String nombre){
+        System.out.print("Tocando "+nombre);
     }
     
-    public void afinar(){
-        System.out.println("Afinando instrumento");
+    public void afinar(String nombre){
+        System.out.print("Afinando "+nombre);
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }
