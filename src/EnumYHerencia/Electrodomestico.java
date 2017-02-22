@@ -8,6 +8,7 @@ public class Electrodomestico {
     protected int tiempoCiclo;
 
     public Electrodomestico() {
+        
     }
     
     public Electrodomestico(int precio, int peso){
