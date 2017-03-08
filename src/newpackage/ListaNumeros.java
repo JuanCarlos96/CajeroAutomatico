@@ -54,7 +54,7 @@ public class ListaNumeros {
     }
     
     public ArrayList<Integer> Pares(){
-        ArrayList<Integer> pares = new ArrayList<Integer>();
+        ArrayList<Integer> pares = new ArrayList<>();
         
         for(int i : lista){
             if(i%2==0){

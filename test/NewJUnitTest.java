@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import newpackage.ListaNumeros;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -31,11 +30,34 @@ public class NewJUnitTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
+//    @Test
+//    public void Promedio() {
+//        ListaNumeros prueba = new ListaNumeros();
+//        prueba.AñadirNumerosAlAzar(3/*Tamaño*/, 1/*Mínimo*/, 3/*Máximo*/);
+//        int result = prueba.Promedio();
+//        assertEquals(2,result);
+//    }
+    
+//    @Test
+//    public void Maximo() {
+//        ListaNumeros prueba = new ListaNumeros();
+//        prueba.AñadirNumerosAlAzar(10/*Tamaño*/, 1/*Mínimo*/, 10/*Máximo*/);
+//        int result = prueba.Maximo();
+//        assertEquals(10,result);
+//    }
+//    
+//    @Test
+//    public void Existe() {
+//        ListaNumeros prueba = new ListaNumeros();
+//        prueba.AñadirNumerosAlAzar(1, 1, 1);
+//        boolean result = prueba.Existe(1);
+//        assertTrue(result);
+//    }
+    
     @Test
-    public void Promedio() {
+    public void Test1() {
         ListaNumeros prueba = new ListaNumeros();
-        prueba.AñadirNumerosAlAzar(1, 1, 1);
-        int result = prueba.Promedio();
-        assertEquals(1,result);
+        prueba.AñadirNumerosAlAzar(2, 1, 2);
+        assertNotNull(prueba);
     }
 }
