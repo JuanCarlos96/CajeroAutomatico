@@ -1,7 +1,5 @@
 package Cartas;
 
-import java.awt.*;
-import java.util.Random;
 import javax.swing.*;
 
 public class Carta extends JLabel{
