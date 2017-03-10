@@ -8,6 +8,9 @@ import static org.junit.Assert.*;
 
 public class NewJUnitTest {
     
+    private ListaNumeros prueba = new ListaNumeros();
+    private ListaNumeros lista = new ListaNumeros();
+    
     public NewJUnitTest() {
     }
     
@@ -21,6 +24,8 @@ public class NewJUnitTest {
     
     @Before
     public void setUp() {
+        prueba.AñadirNumerosAlAzar(10, 1, 10);
+        lista.AñadirNumerosAlAzar(10, 1, 10);
     }
     
     @After
@@ -48,16 +53,18 @@ public class NewJUnitTest {
 //    
 //    @Test
 //    public void Existe() {
-//        ListaNumeros prueba = new ListaNumeros();
-//        prueba.AñadirNumerosAlAzar(1, 1, 1);
-//        boolean result = prueba.Existe(1);
-//        assertTrue(result);
+//        boolean result = prueba.Existe(15);
+//        assertFalse(result);
+//    }
+//    
+//    @Test
+//    public void Test1() {
+//        String a = null;
+//        assertNull(a);
 //    }
     
     @Test
-    public void Test1() {
-        ListaNumeros prueba = new ListaNumeros();
-        prueba.AñadirNumerosAlAzar(2, 1, 2);
-        assertNotNull(prueba);
+    public void Test2() {
+        assertNotSame(this.prueba,this.lista);
     }
 }
