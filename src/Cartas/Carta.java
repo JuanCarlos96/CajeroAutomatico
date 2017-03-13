@@ -4,7 +4,8 @@ import javax.swing.*;
 
 public class Carta extends JLabel{
     private Palo palo;
-    private String color,numero;
+    private Posicion posicion;
+    private String color;
     
     public Carta() {
         JLabel label = new JLabel();
@@ -14,18 +15,18 @@ public class Carta extends JLabel{
         JLabel label = new JLabel(icon);
     }
 
-    public Carta(String numero, Palo palo, String color) {
-        this.numero = numero;
+    public Carta(Posicion posicion, Palo palo, String color) {
+        this.posicion = posicion;
         this.palo = palo;
         this.color = color;
     }
 
-    public String getNumero() {
-        return numero;
+    public Posicion getPosicion() {
+        return posicion;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setPosicion(Posicion posicion) {
+        this.posicion = posicion;
     }
 
     public Palo getPalo() {
@@ -47,7 +48,7 @@ public class Carta extends JLabel{
     @Override
     public String toString() {
         String result;
-        result = getNumero()+" de "+getPalo()+" de color "+getColor();
+        result = getPosicion()+" de "+getPalo()+" de color "+getColor();
         
         return result;
     }
