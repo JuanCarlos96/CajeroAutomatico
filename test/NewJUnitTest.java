@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
 
 public class NewJUnitTest {
     
@@ -24,8 +25,8 @@ public class NewJUnitTest {
     
     @Before
     public void setUp() {
-        prueba.AñadirNumerosAlAzar(10, 1, 10);
-        lista.AñadirNumerosAlAzar(10, 1, 10);
+        prueba.AñadirNumerosAlAzar(1, 0, 0);
+        lista.AñadirNumerosAlAzar(1, 0, 0);
     }
     
     @After
@@ -65,6 +66,8 @@ public class NewJUnitTest {
     
     @Test
     public void Test2() {
-        assertNotSame(this.prueba,this.lista);
+        int x = prueba.PosicionDe(0);
+        assertThat(x,is(0));
+        fail();
     }
 }
