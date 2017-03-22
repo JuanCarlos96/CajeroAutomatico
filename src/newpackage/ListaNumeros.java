@@ -133,8 +133,8 @@ public class ListaNumeros {
     }
 
     /**
-     * 
-     * @return 
+     * Método que convierte a cadena de texto la lista de números generados.
+     * @return La cadena que contiene los números de la lista.
      */
     @Override
     public String toString() {
